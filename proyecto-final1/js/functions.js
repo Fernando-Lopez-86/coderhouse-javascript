@@ -36,43 +36,29 @@ function calcularCredito() {
     switch (plazo) {
         case "6 meses":
             valorcuota = persona.importe * 1.4;
-            return alert("SIMULACION CREDITO" + "\n" +
-                 "Nombre: " + persona.nombre + "\n" +
-                 "Apellido: " + persona.apellido + "\n" +
-                 "Nacimiento: " + persona.nacimiento + "\n" +
-                 "Importe: " + persona.importe + "\n" +
-                 "Plazo: " + persona.plazo + "\n" +
-                 "Valor cuota: " + valorcuota + "\n");
+            mostrarResultado(persona, valorcuota);
             break;
         case "12 meses":
             valorcuota = persona.importe * 1.6;
-            return alert("SIMULACION CREDITO" + "\n" +
-                 "Nombre: " + persona.nombre + "\n" +
-                 "Apellido: " + persona.apellido + "\n" +
-                 "Nacimiento: " + persona.nacimiento + "\n" +
-                 "Importe: " + persona.importe + "\n" +
-                 "Plazo: " + persona.plazo + "\n" +
-                 "Valor cuota: " + valorcuota + "\n");
+            mostrarResultado(persona, valorcuota);
             break;
         case "18 meses":
             valorcuota = persona.importe * 1.8;
-            return alert("SIMULACION CREDITO" + "\n" +
-                 "Nombre: " + persona.nombre + "\n" +
-                 "Apellido: " + persona.apellido + "\n" +
-                 "Nacimiento: " + persona.nacimiento + "\n" +
-                 "Importe: " + persona.importe + "\n" +
-                 "Plazo: " + persona.plazo + "\n" +
-                 "Valor cuota: " + valorcuota + "\n");
+            mostrarResultado(persona, valorcuota);
             break;
         case "24 meses":
             valorcuota = persona.importe * 2;
-            return alert("SIMULACION CREDITO" + "\n" +
+            mostrarResultado(persona, valorcuota);
+            break;
+    }
+}
+
+function mostrarResultado(persona, valorcuota) {
+    return alert("SIMULACION CREDITO" + "\n" +
                  "Nombre: " + persona.nombre + "\n" +
                  "Apellido: " + persona.apellido + "\n" +
                  "Nacimiento: " + persona.nacimiento + "\n" +
                  "Importe: " + persona.importe + "\n" +
                  "Plazo: " + persona.plazo + "\n" +
                  "Valor cuota: " + valorcuota + "\n");
-            break;
-    }
 }
