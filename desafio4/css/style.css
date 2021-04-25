@@ -1,0 +1,55 @@
+* {
+    /* valores por defecto de html se pueden modificar, reseteo los valores por defecto de html*/
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+  }
+
+.form {
+    font-family: "Rubik", sans-serif;
+    font-size: 16px;
+    background-color: #e5eaee;
+    border-radius: 3px;
+    width: 100%;
+    height: auto;
+    padding: 20px;
+    margin: auto;
+}
+
+.footer-container {
+    width: 100%;
+    height: auto;
+}
+
+.footer {
+    position:absolute;
+    bottom:0;
+    width: 100%;
+    background:rgba(0, 0, 0, 0.781);
+    color: aliceblue;
+    text-align: center;
+}
+
+.footer-copyright {
+    float: center;
+    width: 100%;
+    height: auto;
+}
+
+.footer-icons {
+    float: right;
+    padding-right: 10px;
+}
+
+.row {
+    margin-right: 0px;
+    margin-left: 0px;
+}
+
+td {
+    padding: 5px;
+}
+
+.boton {
+    text-align: center;
+}
