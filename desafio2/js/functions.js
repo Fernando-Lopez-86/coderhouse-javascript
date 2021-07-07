@@ -3,7 +3,7 @@ function mostrarMensaje() {
 
     let tipo = document.getElementById("tipo").value;
     let pesos = document.getElementById("pesos").value;
-    let resultado;
+
 
     switch (tipo) {
         case "dolar":
